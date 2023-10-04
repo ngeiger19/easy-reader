@@ -1,6 +1,15 @@
 from pypdf import PdfReader
 
 def readPattern(path):
-    pdf_reader = PdfReader(path)
-    return len(pdf_reader.pages)
+    reader = PdfReader(path)
+
+    title = reader.metadata.get("/Title")
+    author = reader.metadata.get("/Author")
+
+    patternInfo = {
+        "title": title,
+        "author": author
+    }
+
+    return reader.read(path)
     

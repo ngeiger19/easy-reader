@@ -7,6 +7,6 @@ app = create_app()
 if __name__ == '__main__':
     #app.run(debug=True)
 
-    pages = easypdf.readPattern("patterns/crochet_pattern1.pdf")
+    print(easypdf.readPattern("patterns/crochet3.pdf"))
 
-    print(pages)
+    
