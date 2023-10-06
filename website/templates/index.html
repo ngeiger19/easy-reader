@@ -1,7 +1,22 @@
 {% extends 'base.html' %}
 
-{% block content %}
-    <h1>{% block title %} Home {% endblock %}</h1>
-    <h1>Easy Reader</h1>
-    <h3>Knit and crochet pattern helper</h3>
+{% block grid %}
+    <div class="item1">
+        <h2>Easy Reader</h2>
+    </div>
+    <div class="item2, box">
+        <h2>Upload Pattern</h2>
+    </div>
+    <div class="item3, box">
+        <h2>Create New Pattern</h2>
+    </div>
+    <div class="item4">
+        <p class="about">crochet and knitting patterns don't have to be a pain to read or write!</p>
+    </div>
+    <div class="item5, box">
+        <h2>My Library</h2>
+    </div>
+    <div class="item6, box">
+        <h2>Account & Settings</h2>
+    </div>
 {% endblock %}
