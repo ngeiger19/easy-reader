@@ -1,19 +1,21 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>{% block title %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} - Easy Reader</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
 </head>
 <body>
     <nav>
-        <h1>Easy Reader</h1>
-        <ul>
-            <li><a href="">Register</a></li>
-            <li><a href="">Login</a></li>
-        </ul>
+        <a href="#">Upload</a>
+        <a href="#">New</a>
+        <a href="#">About</a>
     </nav>
-    <section class="content">
+    <hr>
+    <div class="content">
         <header>
-            {% block header %}{% endblock %}
+            {% block content %} {% endblock %}
         </header>
-    </section>
+    </div>
 </body>
+</html>
