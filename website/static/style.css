@@ -17,13 +17,16 @@ h1 {
     padding: 0;
 }
 
-.aboutP {
+p {
     font-family: LouisGeorgeCafeLight;
-    font-size: 42px;
-    font-weight: 100px;
     letter-spacing: 1px;
+    color: #333333;
+}
+
+/**************** Home Page *****************/
+.aboutP {
+    font-size: 42px;
     margin: 15px 30px 15px 15px;
-    color: #111111;
 }
 
 
@@ -41,39 +44,39 @@ h1 {
 
 }
 
-.item1 {
-    grid-area: item1;
+.titleBox {
+    grid-area: titleBox;
 }
 
-.item2 {
-    grid-area: item2;
+.gridBox1 {
+    grid-area: gridBox1;
 }
 
-.item3 {
-    grid-area: item3;
+.gridBox2 {
+    grid-area: gridBox2;
 }
 
-.item4 {
-    grid-area: item4;
+.gridBox3 {
+    grid-area: gridBox3;
 }
 
-.item5 {
-    grid-area: item5;
+.gridBox4 {
+    grid-area: gridBox4;
 }
 
-.item6 {
-    grid-area: item6;
+.gridBox5 {
+    grid-area: gridBox5;
 }
 
-.item7 {
-    grid-area: item7;
+.gridBox6 {
+    grid-area: gridBox6;
 }
 
 .info {
     grid-area: info;
     display: grid;
     grid:
-    [row1-start] "item1" 150px [row1-end]
+    [row1-start] "titleBox" 150px [row1-end]
     [row2-start] "aboutBox" 480px [row2-end]
     / 300px;
 }
@@ -84,8 +87,8 @@ h1 {
     display: grid;
     gap: 30px;
     grid:
-    [row1-start] "info item2 item3 item4" 300px [row1-end]
-    [row2-start] "info item2 item3 item4" 300px [row2-end]
+    [row1-start] "info gridBox1 gridBox2 gridBox3" 300px [row1-end]
+    [row2-start] "info gridBox4 gridBox5 gridBox6" 300px [row2-end]
     / 300px 300px 300px 300px;
     justify-content: center;
 }
