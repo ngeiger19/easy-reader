@@ -3,14 +3,27 @@
     src: url(fonts/Super\ Magic.ttf);
 }
 
+@font-face {
+    font-family: LouisGeorgeCafeLight;
+    src: url(fonts/Louis\ George\ Cafe\ Light.ttf);
+}
 
 h1 {
     font-family: SuperMagic;
     font-size: 60px;
     letter-spacing: 2px;
     font-weight: 200;
-    margin: 0;
+    margin: 0 0 15px 15px;
     padding: 0;
+}
+
+.aboutP {
+    font-family: LouisGeorgeCafeLight;
+    font-size: 42px;
+    font-weight: 100px;
+    letter-spacing: 1px;
+    margin: 15px 30px 15px 15px;
+    color: #111111;
 }
 
 
@@ -23,7 +36,9 @@ h1 {
 .box {
     border-radius: 25px;
     background-color: aqua;
-    
+    display: flex;
+    align-items: flex-end;
+
 }
 
 .item1 {
