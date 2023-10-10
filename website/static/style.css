@@ -8,9 +8,13 @@
     src: url(fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
+body {
+    background-color: rgb(253, 243, 243);
+}
+
 h1 {
     font-family: SuperMagic;
-    font-size: 60px;
+    font-size: 58px;
     letter-spacing: 2px;
     font-weight: 200;
     margin: 0 0 15px 15px;
@@ -19,57 +23,69 @@ h1 {
 
 p {
     font-family: LouisGeorgeCafeLight;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     color: #333333;
 }
 
 /**************** Home Page *****************/
 .aboutP {
     font-size: 42px;
-    margin: 15px 30px 15px 15px;
+    margin: 20px 30px 15px 15px;
 }
 
 
 .aboutBox {
     grid-area: aboutBox;
-    background-color: aqua;
+    background-color: skyblue;
     border-radius: 25px;
-}
-
-.box {
-    border-radius: 25px;
-    background-color: aqua;
-    display: flex;
-    align-items: flex-end;
-
 }
 
 .titleBox {
     grid-area: titleBox;
+    color: chocolate;
 }
 
 .gridBox1 {
     grid-area: gridBox1;
+    background-color:rgb(141, 141, 33);
+    color:pink;
 }
 
 .gridBox2 {
     grid-area: gridBox2;
+    background-color:skyblue;
+    color:orchid;
 }
 
 .gridBox3 {
     grid-area: gridBox3;
+    background-color: chocolate;
+    color:rgb(253, 243, 243)
 }
 
 .gridBox4 {
     grid-area: gridBox4;
+    background-color: chocolate;
+    color:rgb(253, 243, 243);
 }
 
 .gridBox5 {
     grid-area: gridBox5;
+    background-color: pink;
+    color:rgb(141, 141, 33);
 }
 
 .gridBox6 {
     grid-area: gridBox6;
+    background-color: orchid;
+    color: #111111;
+}
+
+.box {
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+
 }
 
 .info {
